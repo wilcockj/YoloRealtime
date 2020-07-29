@@ -16,8 +16,9 @@ colors = np.random.uniform(0, 255, size=(100, 3))
 number = 0
 while True:
     _, img = cap.read()
+    #img = cv2.UMat(img)
     height, width, _ = img.shape
-
+    #height,width = (640,480)
     blob = cv2.dnn.blobFromImage(img, 1/255, (416, 416), (0,0,0), swapRB=True, crop=False)
     net.setInput(blob)
     output_layers_names = net.getUnconnectedOutLayersNames()
