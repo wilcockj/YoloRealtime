@@ -1,5 +1,5 @@
 # YoloRealtime
-Requires Darknet Yolo
+Requires Darknet
 Uses Yolo to realtime identify objects and for now take pictures when a person or fridge is detected
 
 Desktop Realtime takes screenshots of the desktop and runs the yolo algorithm on it 
